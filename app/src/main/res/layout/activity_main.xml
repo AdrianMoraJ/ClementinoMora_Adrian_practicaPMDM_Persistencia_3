@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Banda para el nombre de la aplicación -->
+    <LinearLayout
+        android:id="@+id/app_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryVariant">
+
+        <TextView
+            android:id="@+id/app_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/Chocolate"
+            android:fontFamily="@font/newfont"
+            android:gravity="start"
+            android:textSize="27sp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Contenedor de Fragmento -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_title_bar" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/textViewModule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/newfont"
+        android:text="Nombre del Módulo"
+        android:backgroundTint="@color/colorPrimaryVariant"
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:background="#EEEEEE" />
+
+    <!-- Lista de Tareas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_below="@id/textViewModule"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Botón para añadir tarea -->
+    <Button
+        android:id="@+id/buttonAddTask"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/add_icon"
+        android:onClick="addTask"
+        android:padding="16dp"
+        android:contentDescription="Añadir Tarea"/>
+
+</RelativeLayout>

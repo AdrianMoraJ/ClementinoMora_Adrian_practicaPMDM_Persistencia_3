@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nombre de la tarea -->
+    <EditText
+        android:id="@+id/editTextTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la Tarea"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Descripción de la tarea -->
+    <EditText
+        android:id="@+id/editTextTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción de la Tarea"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Fecha de vencimiento -->
+    <TextView
+        android:id="@+id/textViewDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Vencimiento:  DD/MM/AAAA "
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Prioridad -->
+    <TextView
+        android:id="@+id/textViewPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prioridad "
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/buttonSaveTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar Cambios"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp" />
+
+</LinearLayout>
